@@ -1,0 +1,9 @@
+# /etc/netplan/01-netcfg.yaml — Ubuntu client (apply with: sudo netplan apply)
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s3:
+      dhcp4: no
+      addresses:
+        - 192.168.100.2/24

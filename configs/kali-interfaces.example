@@ -1,0 +1,5 @@
+# /etc/network/interfaces (excerpt) — Kali, internal VirtualBox network
+auto eth1
+iface eth1 inet static
+    address 192.168.100.1
+    netmask 255.255.255.0

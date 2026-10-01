@@ -1,0 +1,12 @@
+# /etc/wireguard/wg0.conf  — Ubuntu (client)
+# Replace the placeholders with your own keys. NEVER commit real keys.
+[Interface]
+Address = 10.0.0.2/24
+PrivateKey = <CLIENT_PRIVATE_KEY>
+
+[Peer]
+# Kali server
+PublicKey = <SERVER_PUBLIC_KEY>
+Endpoint = 192.168.100.1:51820
+AllowedIPs = 10.0.0.0/24
+PersistentKeepalive = 25
